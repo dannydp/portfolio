@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Сайт-портфолио</title>
     <link rel="shortcut icon" href="img/iam.png" type="image/x-icon">
     <link rel="stylesheet" href="vendor/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/bower_components/ihover/src/ihover.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet/less" href="css/main.less">
     <link rel="stylesheet" href="vendor/animate.css">
@@ -16,7 +16,7 @@
     <script src="vendor/bower_components/jquery/dist/jquery.js"></script>
     <script src="vendor/bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="vendor/bower_components/less/dist/less.js"></script>
-    <script src="vendor/jquery.scrollNav.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -27,16 +27,17 @@
     <div class="container">
         <div class="col-sm-6 col-sm-offset-3">
             <div class="btn-group purchase_toggle_buttons">
-                <a target="_self" type="button" class="btn  header-text">Сайт-портфолио <p>Даниила Селина</p></a>
+                <a target="_self" type="button" class="btn  header-text">Сайт - портфолио <p>Даниила Селина</p></a>
                 <a href=".portfolio" target="_self" type="button"
                    class="btn btn-default purchase_toggle_button left animated bounceInLeft">Портфолио</a>
-                <a type="button" class="btn btn-default purchase_toggle_button right animated bounceInRight">Контакты</a>
+                <a href=".contacts" target="_self" type="button"
+                   class="btn btn-default purchase_toggle_button right animated bounceInRight">Контакты</a>
                 <span class="or"><img src="img/Laptop-01-48.png"></span>
             </div>
         </div>
     </div>
 </div>
-<div class="container about">
+<section class="container about">
     <div class="iam"></div>
     <div class="about-me">
         Привет, меня зовут Даниил.
@@ -44,13 +45,172 @@
         <span class="red-text">HTML</span>, <span class="red-text">CSS</span>, <span class="red-text">JavaScript</span>,
         <span class="red-text">PHP</span>, <span class="red-text">jQuery</span>, <span class="red-text">AngularJS</span>,
         <span class="red-text">Bootstrap</span>.
-        <br/> Знаком с базовыми принципами <span class="red-text">РћРћРџ</span>.
+        <br/> Знаком с базовыми принципами <span class="red-text">ООП</span>.
         <br/> Имею некоторое представление о <span class="red-text">MySQL</span>.
-        <br/> С ноября 2014 по февраль 2015 года проходил четырехмесячные курсы для начинающих веб-разработчиков в <span class="red-text">Maxymiser Academy</span>
+        <br/> С ноября 2014 по февраль 2015 года проходил четырехмесячные курсы для начинающих веб-разработчиков в <span
+            class="red-text">Maxymiser Academy</span>
         (www.maxymiser.com).
         <br/>
     </div>
+</section>
+
+<section class="portfolio">
+    <div class="container">
+        <p class="title">Веб-сайты</p><br>
+
+        <div class="col-sm-4">
+            <div class="ih-item circle colored effect13 bottom_to_top"><a href="http://prohands.dp.ua/">
+                <div class="img"><img src="img/prohands_small.jpg" alt="img"></div>
+                <div class="info">
+                    <div class="info-back">
+                        <h3>www.prohands.dp.ua</h3>
+
+                        <p>JavaScript, PHP, MySQL, Bootsrap, jQuery</p>
+                    </div>
+                </div>
+            </a></div>
+        </div>
+        <div class="col-sm-4">
+            <div class="ih-item circle colored effect13 bottom_to_top"><a href="http://dsi.dp.ua/">
+                <div class="img"><img src="img/dsi_small.jpg" alt="img"></div>
+                <div class="info">
+                    <div class="info-back">
+                        <h3>www.dsi.dp.ua</h3>
+
+                        <p>JavaScript, PHP, Bootsrap, jQuery</p>
+                    </div>
+                </div>
+            </a></div>
+        </div>
+
+
+    </div>
+
+<div class="container">
+    <p class="title">Веб-приложения</p><br>
+
+    <div class="col-sm-4">
+        <div class="ih-item circle colored effect13 bottom_to_top"><a href="works/widgets/todo/index.html" target="_blank">
+            <div class="img"><img src="img/todo.jpg" alt="img"></div>
+            <div class="info">
+                <div class="info-back">
+                    <h3>todo list</h3>
+
+                    <p>AngularJS, Bootstrap</p>
+                </div>
+            </div>
+        </a></div>
+    </div>
+    <div class="col-sm-4">
+        <div class="ih-item circle colored effect13 bottom_to_top"><a href="works/widgets/StopWatch/index.html" target="_blank">
+            <div class="img"><img src="img/stopwatch.jpg" alt="img"></div>
+            <div class="info">
+                <div class="info-back">
+                    <h3>Секундомер</h3>
+
+                    <p>JavaScript, Bootsrap, jQuery</p>
+                </div>
+            </div>
+        </a></div>
+    </div>
+    <div class="col-sm-4">
+        <div class="ih-item circle colored effect13 bottom_to_top"><a href="works/widgets/slider/sliderjs.html" target="_blank">
+            <div class="img"><img src="img/sliderjs.jpg" alt="img"></div>
+            <div class="info">
+                <div class="info-back">
+                    <h3>Слайдер на js</h3>
+
+                    <p>JavaScript, jQuery</p>
+                </div>
+            </div>
+        </a></div>
+    </div>
+    <div class="col-sm-4">
+        <div class="ih-item circle colored effect13 bottom_to_top"><a href="works/widgets/context-menu/context-menu.html" target="_blank">
+            <div class="img"><img src="img/menu.jpg" alt="img"></div>
+            <div class="info">
+                <div class="info-back">
+                    <h3>Контекстное меню</h3>
+
+                    <p>JavaScript</p>
+                </div>
+            </div>
+        </a></div>
+    </div>
+    <div class="col-sm-4">
+        <div class="ih-item circle colored effect13 bottom_to_top"><a href="works/widgets/taglist/taglist.html" target="_blank">
+            <div class="img"><img src="img/taglist.jpg" alt="img"></div>
+            <div class="info">
+                <div class="info-back">
+                    <h3>Tag List</h3>
+
+                    <p>JavaScript, Bootsrap, jQuery</p>
+                </div>
+            </div>
+        </a></div>
+    </div>
+    <div class="col-sm-4">
+        <div class="ih-item circle colored effect13 bottom_to_top"><a href="works/widgets/lightbox/lightbox.html" target="_blank">
+            <div class="img"><img src="img/lightbox.jpg" alt="img"></div>
+            <div class="info">
+                <div class="info-back">
+                    <h3>lightbox</h3>
+
+                    <p>JavaScript, jQuery, AnimateCSS</p>
+                </div>
+            </div>
+        </a></div>
+    </div>
+    <div class="col-sm-4">
+        <div class="ih-item circle colored effect13 bottom_to_top"><a href="works/widgets/form-validation/form.html"  target="_blank">
+            <div class="img"><img src="img/form.jpg" alt="img"></div>
+            <div class="info">
+                <div class="info-back">
+                    <h3>Форма сбора данных</h3>
+
+                    <p>JavaScript, Bootsrap</p>
+                </div>
+            </div>
+        </a></div>
+    </div>
+    <div class="col-sm-4">
+        <div class="ih-item circle colored effect13 bottom_to_top"><a href="works/widgets/sliderCSS/sliderCSS.html" target="_blank">
+            <div class="img"><img src="img/slider.jpg" alt="img"></div>
+            <div class="info">
+                <div class="info-back">
+                    <h3>Слайдер на CSS</h3>
+
+                    <p>CSS</p>
+                </div>
+            </div>
+        </a></div>
+    </div>
+    <div class="col-sm-4">
+        <div class="ih-item circle colored effect13 bottom_to_top"><a href="works/widgets/users-table/index.php" target="_blank">
+            <div class="img"><img src="img/users.jpg" alt="img"></div>
+            <div class="info">
+                <div class="info-back">
+                    <h3>Таблица с выводом пользователей</h3>
+
+                    <p>PHP, Bootsrap</p>
+                </div>
+            </div>
+        </a></div>
+    </div>
 </div>
+</section>
+<footer>
+    <div class="container contacts">
+        <a><i class="fa fa-map-marker"></i><p class = "text">Днепропетровск, Украина</p></a>
+        <a><i class="fa fa-phone"></i><p class = "text">063 933 93 64</p></a>
+        <a href="https://www.facebook.com/s.danny.dp" target="_blank"><i class="fa fa-facebook-official"></i><p class = "text">Селин Даниил</p></a>
+        <a href="https://ua.linkedin.com/pub/danny-selin/a3/54a/40/ru" target="_blank"><i class="fa fa-linkedin-square"></i><p class = "text"></i>Daniil Selin</p></a>
+        <a href="https://github.com/dannydp" target="_blank"><i class="fa fa-github"></i><p class = "text">dannydp</p></a>
+        <a><i class="fa fa-skype"></i><p class = "text">s.danny.dp</p></a>
+        <a href="mailto:s.danny.dp@gmail.com"><i class="fa fa-envelope-o"></i><p class = "text">s.danny.dp@gmail.com</p></a><br><br>
+    </div>
+    <p id="copyright">© Даниил Селин | 2015</p>
+</footer>
 </body>
 
 </html>

@@ -5,6 +5,8 @@
     font-weight: normal;
     font-style: normal;
 }
+@orangeColor : #EF4836;
+@blueColor : #34495E;
 body {
     background-color: #F2F1EF;
     width: 100%;
@@ -12,7 +14,7 @@ body {
     font-family: 'opengost_type_a_ttregular', 'Roboto Condensed', 'Constantia Bold', sans-serif;
 }
 .scroll-up {
-    color: #EF4836;
+    color: @orangeColor;
     cursor: pointer;
     display: none;
     width: 40px;
@@ -31,7 +33,7 @@ body {
     box-shadow: 1px 0px 1px #010101;
     .header-text {
         font-size: 32px;
-        color: #EF4836;
+        color: @orangeColor;
         text-align: center;
         min-width: 200px;
         width: 100%;
@@ -42,15 +44,15 @@ body {
         -moz-border-radius: 0px;
         -o-border-radius: 0px;
         border-radius: 0px;
-        background-color: #34495E;
+        background-color: @blueColor;
         cursor: default;
         p {
-            color: #efefef;
+            color: #F2F1EF;
             font-size: 18px;
         }
         &:hover {
-            background-color: #34495E;
-            color: #efefef;
+            background-color: @blueColor;
+            color: #F2F1EF;
         }
     }
     .btn-group {
@@ -62,7 +64,7 @@ body {
             margin-bottom: 5px;
             padding-top: 20px;
             padding-bottom: 20px;
-            color: #efefef;
+            color: #F2F1EF;
             font-size: 18px;
             line-height: 1em;
             border: none;
@@ -70,10 +72,10 @@ body {
             -moz-border-radius: 0px;
             -o-border-radius: 0px;
             border-radius: 0px;
-            background-color: #EF4836;
+            background-color: @orangeColor;
             &:hover {
-                background-color: #34495E;
-                color: #efefef;
+                background-color: @blueColor;
+                color:#F2F1EF;
             }
         }
         .or {
@@ -105,7 +107,7 @@ body {
         }
     }
     .about-me {
-        color: #2C3E50;
+        color: @blueColor;
         width:100%;
         font-family:'opengost_type_a_ttregular','Constantia Bold', sans-serif;
         font-size: 24px;
@@ -113,7 +115,56 @@ body {
         text-align: center;
         line-height: 50px;
         .red-text {
-            color: #EF4836;
+            color: @orangeColor;
         }
+    }
+}
+.title{
+    margin-top: 50px;
+    color:#EF4836;
+    font-size: 24px;
+}
+.ih-item {
+    margin-right: 75px;
+    margin-top: 25px;
+    width: 200px;
+    height: 200px;
+    .img{
+        width: 200px;
+        height: 200px;
+        box-shadow: 5px 5px 10px 0 #cecece;
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: url(grayscale.svg#greyscale); /* Firefox 4+ */
+        filter: gray; /* IE 6-9 */
+    }
+}
+footer{
+    min-height: 300px;
+    background-color: @blueColor;
+    margin-top: 50px;
+    padding-top: 5%;
+    .contacts{
+        font-size:20px;
+        line-height: 50px;
+        text-align: center;
+        a{
+            display: inline-block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color:#F2F1EF;
+            min-width: 157px;
+        }
+        i{
+            font-size: 50px;
+            color:@orangeColor;
+        }
+    }
+    #copyright{
+        text-align: center;
+        color: @orangeColor;
     }
 }
