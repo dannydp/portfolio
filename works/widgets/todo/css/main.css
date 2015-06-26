@@ -1,0 +1,56 @@
+.todo-list {
+    height: 100%;
+}
+
+.title {
+    background-color: #3498DB;
+    padding: 15px;
+    font-size: 18px;
+    color: #ECECEC;
+}
+
+.glyphicon-list-alt {
+    margin-right: 15px;
+    float: left;
+    margin-top: 5px;
+}
+
+.title > p {
+    margin-top: 5px;
+}
+
+.row {
+    background-color: #ECECEC;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.btn-add {
+    background-color: #26A65B;
+    color: #ECECEC;
+}
+
+.list {
+    border: 1px solid #ECECEC;
+}
+
+.span-wrapper {
+    float: right;
+    min-width: 45px;
+    cursor: pointer;
+    color: #26A65B;
+    margin-right: 10px;
+}
+
+.glyphicon-search {
+    float: right;
+    margin-top: -27px;
+    margin-right: 10px;
+    color: #26A65B;
+}
+
+.done-true {
+    text-decoration: line-through;
+    color: #26A65B;
+}

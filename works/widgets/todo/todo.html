@@ -1,0 +1,34 @@
+<div class="title">
+    <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+    <p>Количество задач на сегодня:{{base.length}}</p>
+    <input type="search" ng-model="query" class="form-control" placeholder="Поиск">
+    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+</div>
+<div class="new-todo">
+    <form name="todoForm" class="form" ng-submit="todoForm.$valid && addToDo()">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="input-group">
+                    <input type="text" ng-model="newToDo" class="form-control" id="title" placeholder="Задача" required>
+                    <span class="input-group-btn">
+                            <button class="btn btn-add" type="submit"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<table class="list table table-hover">
+    <tr class="done-{{todo.done}}" ng-repeat="todo in base | filter:query">
+        <td>
+            <input type="checkbox" ng-model="todo.done">
+        </td>
+        <td>{{todo.todoText}}</td>
+        <td>
+            <div class="span-wrapper">
+                <span class="glyphicon glyphicon-trash" ng-click="removeToDo(todo)" aria-hidden="true"></span>
+            </div>
+        </td>
+    </tr>
+</table>

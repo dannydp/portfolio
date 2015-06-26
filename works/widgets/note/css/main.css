@@ -1,0 +1,56 @@
+body {
+	height: 100%;
+	width: 100%;
+	background-color: #1E8BC3;
+}
+.container {
+	background-color: #F64747;
+	min-height: 1000px;
+}
+
+.notepad {
+	margin:50px auto;
+	width: 500px;
+}
+
+.notepad .btn {
+	margin-top:10px;
+	float: right;
+	background-color: #1E8BC3;
+}
+.notepad .btn:hover, .notepad .btn:focus {
+	background-color: #1E8BC3;
+}
+.notepad textarea {
+	margin-top: 15px;
+	resize: none;
+}
+.note-container {
+	margin-top: 70px auto;
+}
+.note {
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 10px;
+	background-color: #F2F1EF;
+	padding: 15px;
+	border-radius: 5px;
+	width: 47%;
+}
+.note p {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	line-height: 25px;
+}
+.title {
+	color:#1E8BC3;
+	font-size: 18px;
+}
+.control-btn {
+	float: right;
+	color: #1E8BC3;
+	font-size: 18px;
+}
+.control-btn .glyphicon{
+	margin-left: 15px;
+}

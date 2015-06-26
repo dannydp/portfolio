@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<a href="https://github.com/dannydp/Courses-at-Maxymiser-Academy-/tree/master/ContextMenu" target="_blank"><h1>Code on GitHub</h1></a>
+<h1>Right-click</h1>
+<script>
+	(function() {
+		var menuExample = [{
+			title: 'View',
+			submenu: [{
+				title: 'Big icons',
+				action: function () {console.log('emailed')}
+			}, {
+				title: 'Small icons',
+				action: function () {console.log('skyped')}
+			}]
+		}, {
+			title: 'Sorting',
+			submenu: [{
+				title: 'Name',
+				action: function () {console.log('emailed')}
+			}, {
+				title: 'Date',
+				action: function () {console.log('skyped')}
+			},{
+				title: 'Size',
+				action: function () {console.log('skyped')}
+			}]
+		}, {
+			title: 'Update',
+			action: function () {console.log('edit content')}
+		}];
+	window.cn = new ContextMenu(document.documentElement,menuExample);
+	}());
+</script>
+</body>
+</html>

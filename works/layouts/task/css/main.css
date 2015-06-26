@@ -1,0 +1,186 @@
+/*RESET CSS*/
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+body {
+	min-width:930px;
+	background-image: url(../img/background.jpg);
+	background-color: #f4f7f2;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+header {
+	margin:315px auto;
+	width: 980px;
+	height: 120px;
+}
+
+/*AVATAR AND COMENTS*/
+.coment {
+	float: right;
+	width: 270px;
+	height: 90px;
+}
+#avatar {
+	width: 40px;
+	height: 40px;
+	background: url(../img/sprites.png);
+	background-position: -3px 0;
+	border-radius: 23px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+#bubble {
+	float: right;
+	width: 212px;
+	height: 67px;
+	background-color: #70c5b8;
+	border-radius: 12px;
+	margin-top: -38px;
+}
+.bubble-text {
+	font-size: 10.76px;
+	font-family: 'Open Sans', sans-serif;
+	color: #FFFFFF;
+	margin: 10px 20px;
+}
+.bubble-text-time {
+	font-size: 8.72px;
+	font-family: 'Open Sans', sans-serif;
+	color: #FFFFFF;
+	margin: 17px 10px;
+}
+#tail {
+	background: url(../img/sprites.png);
+	background-position: 0 -51px;
+	height: 8px;
+	margin-top: -15px;
+	margin-left: 48px;
+}
+
+/*COLUMNS*/
+.main {
+	width: 930px;
+	margin:-340px auto;
+	cursor: default;
+}
+#most-popular {
+	width: 230px;
+	height: 32px;	
+	background: url(../img/sprites.png);
+	background-position: -351px -7px;
+	margin-left: 465px;
+	padding-top:10px;
+}
+#most-popular p {
+	font-family: 'Signika Bold', sans-serif;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+#most-popular img:first-child {
+	margin-top: 10px;
+	padding-right: 5px;
+}
+#most-popular img {
+	padding-left: 5px;
+}
+.features, .single-license,.extended-license,.membership {
+	float: left;
+}
+
+li:first-child {
+	opacity: 0.8;
+	border-radius: 3px 3px 0 0;
+}
+.features li:first-child {
+	background-color: transparent;
+}
+
+.single-license > li,.extended-license > li,.membership > li,.features > li {
+	display: table;
+	margin:1px;
+	width: 230px;
+	height: 115px;
+	background-color:#FFFFFF;
+}
+.bottom-list li {
+	margin-top: 25px;
+
+}
+#chekmark {
+	margin-left: 55px;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background-color: #52be8b; 
+	background: url(../img/sprites.png);
+	background-position: -590px -20px;
+}
+.sign-up {
+	border-radius: 20px;
+	background-color: #52be8b;
+	margin:15% 15%;
+	width: 160px;
+	height: 26px;
+	padding-top: 14px;
+}
+#circle {
+	float: right;
+	margin-right: 10px;
+	width: 26px;
+	height: 25px;
+	background: url(../img/sprites.png);
+	margin-top: -22px;
+	background-position: -350px -55px;
+}
+.sign-up a {
+	font-family: 'Open Sans Bold', sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin:22% 25%;
+}
+
+/*TEXT IN COLUMNS*/ 
+.floater {
+    height: 43%;
+    width: 100%;
+    margin-bottom: -4px;
+    clear: left;
+}
+.title-text {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Signika', sans-serif;
+	clear: both;
+	text-align: center;
+    margin-top: 50px;
+}
+.main-text {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	color: #888888;
+	text-align: center;
+}
+.price-text {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	text-transform: uppercase;
+	color: #434e59;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.text {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: #FFFFFF;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0px 6px 0px 6px;
+}
